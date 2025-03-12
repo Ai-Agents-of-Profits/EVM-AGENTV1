@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "evm-signer": {
+      "command": "docker",
+      "args": [
+        "run",
+        "--rm",
+        "-i",
+        "-v", "mcp-evm-src:/app/src",
+        "-v", "mcp-evm-keys:/app/keys",
+        "-e", "ALCHEMY_API_KEY=${ALCHEMY_API_KEY}",
+        "-e", "DEFAULT_NETWORK=monad-testnet",
+        "-e", "ENCRYPT_KEYS=true",
+        "-e", "KEY_PASSWORD=aop",
+        "evm-signer-mcp"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}

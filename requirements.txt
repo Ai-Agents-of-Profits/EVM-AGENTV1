@@ -1,0 +1,4 @@
+﻿mcp==1.1.2
+openai
+huggingface_hub
+flask

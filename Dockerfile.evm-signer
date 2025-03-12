@@ -1,0 +1,24 @@
+FROM node:18-slim
+
+WORKDIR /app
+
+# Install basic dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    python3 \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create keys directory and set permissions
+RUN mkdir -p /app/keys && chown -R node:node /app
+
+# Switch to non-root user
+USER node
+
+# Set NODE_ENV
+ENV NODE_ENV=production
+
+# Mount points for source code and keys
+VOLUME ["/app/src", "/app/keys"]
+
+# Command to run the server
+CMD ["node", "/app/src/build/index.js"]

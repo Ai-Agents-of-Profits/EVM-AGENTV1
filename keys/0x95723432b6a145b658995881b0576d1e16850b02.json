@@ -1,0 +1,6 @@
+{
+  "address": "0x95723432b6a145b658995881b0576d1e16850b02",
+  "privateKey": "",
+  "encrypted": true,
+  "encryptedData": "{\"address\":\"95723432b6a145b658995881b0576d1e16850b02\",\"id\":\"1e6c5c2d-050d-4891-9200-d2892878f9c6\",\"version\":3,\"Crypto\":{\"cipher\":\"aes-128-ctr\",\"cipherparams\":{\"iv\":\"17a28107228e93bb2a148495199aaa83\"},\"ciphertext\":\"4c08c04a4c987956555b6f944de13aa3b801e1c24ca9eb52ab1b5e18cc399034\",\"kdf\":\"scrypt\",\"kdfparams\":{\"salt\":\"faaf7a5ef8bdbfee7b6323a2090bc4ac67957afab6c1d2c39cdfa70e863cd81b\",\"n\":131072,\"dklen\":32,\"p\":1,\"r\":8},\"mac\":\"7ea156baac11f04b79ac01a11a8f8a232b62b2367458c9fe5099eaae6f3e200e\"}}"
+}
