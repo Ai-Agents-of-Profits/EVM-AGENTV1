@@ -1,0 +1,13 @@
+{
+  "name": "mcp-evm-signer",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "MCP EVM Signer Server",
+  "main": "index.js",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "latest",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.7.1",
+    "fs-extra": "^11.1.1"
+  }
+}
